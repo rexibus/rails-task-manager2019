@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   #list all the tasks
   get "tasks", to: "tasks#index"
   #show a specific tasks
-
+  get "tasks/:id", to: "tasks#show", as: :task
   #create a task
 
   #update a task
